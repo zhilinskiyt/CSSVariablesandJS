@@ -7,16 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-      <div class="leftPanel">
+    <div class="leftPanel">
       <ul class="title-variebls">
         <li class="title">Фотофильтры:</li>
         <li>
           Цвет фона
-          <input type="color" name="base" value="#008C8C" class="inputColor" />
+          <input type="color" name="base" value="#008C8C" class="input" />
         </li>
         <li>
           Размер фото
           <input
+            class="input"
             type="range"
             name="spacing"
             min="20"
@@ -28,6 +29,7 @@
         <li>
           Размытие
           <input
+            class="input"
             type="range"
             name="blur"
             min="0"
@@ -39,6 +41,7 @@
         <li>
           Инверсия
           <input
+            class="input"
             type="range"
             name="invert"
             min="0"
@@ -50,6 +53,7 @@
         <li>
           Сепия
           <input
+            class="input"
             type="range"
             name="sepia"
             min="0"
@@ -61,6 +65,7 @@
         <li>
           Насыщенность
           <input
+            class="input"
             type="range"
             name="saturate"
             min="0"
@@ -72,6 +77,7 @@
         <li>
           Оттенок
           <input
+            class="input"
             type="range"
             name="hue-rotate"
             min="0"
@@ -81,12 +87,12 @@
           />
         </li>
       </ul>
-      </div>
-      <img
-        class="photo"
-        src="19523.jpg"
-        alt="Изображение к которому будут применяться фотофильтры"
-      />
+    </div>
+    <img
+      class="photo"
+      src="19523.jpg"
+      alt="Изображение к которому будут применяться фотофильтры"
+    />
     <script src="/main.js"></script>
   </body>
 </html>
