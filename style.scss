@@ -55,9 +55,10 @@ body {
   height: 900px;
   top: 0;
   left: 0;
+  box-sizing: border-box;
 }
 
 .photo {
   width: var(--spacing);
-  filter: blur(var(--blur)) sepia(var(--sepia)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate)) invert(var(--invert, 50%));
+  filter: blur(var(--blur)) sepia(var(--sepia)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate));
 }
