@@ -1,12 +1,18 @@
+:root {
+  --base: #ffc600;
+  --blur: 0px;
+  --invert: 0;
+  --sepia: 0;
+  --saturate: 0;
+  --hue-rotate: 0; }
+
 * {
   margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #c0c023;
+  background-color: var(--base);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -23,18 +29,14 @@ body {
       font-size: 45px; }
 
 .photo {
-  margin: 220px 0 0 20%;
-  -webkit-filter: blur(0);
-          filter: blur(0);
-  -webkit-filter: invert(0);
-          filter: invert(0);
-  -webkit-filter: sepia(0);
-          filter: sepia(0);
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
-  -webkit-filter: hue-rotate(0);
-          filter: hue-rotate(0);
-  height: 400px;
-  width: 700px; }
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+  -webkit-filter: hue-rotate(var(--hue-rotate));
+          filter: hue-rotate(var(--hue-rotate));
+  -webkit-filter: sepia(var(--sepia));
+          filter: sepia(var(--sepia));
+  -webkit-filter: saturate(var(--saturate));
+          filter: saturate(var(--saturate));
+  margin: 220px 0 0 20%; }
 
 /*# sourceMappingURL=style.css.map */
