@@ -7,17 +7,15 @@
 // $photoWidth: 700px;
 // $photoHeight: 400px;
 
-
 :root {
   --blur: 0;
-  --invert: 20%;
+  --invert: 0%;
   --sepia: 0;
   --saturate: 100%;
   --hue-rotate: 0;
-  --base: #008C8C;
+  --base: #008c8c;
   --spacing: 40%;
 }
-
 
 * {
   margin: 0;
@@ -60,5 +58,6 @@ body {
 
 .photo {
   width: var(--spacing);
-  filter: blur(var(--blur)) sepia(var(--sepia)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate));
+  filter: blur(var(--blur)) sepia(var(--sepia)) saturate(var(--saturate))
+    hue-rotate(var(--hue-rotate));
 }
